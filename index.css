@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0.5vh solid black; 
+    background-color: black;
+}
+
+div.PROJECT-FC {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vh;
+    font-family: sans-serif;
+    font-size: 4vh;
+    color: white;
+}
+
+div.PROJECT-FC .logo_principal {
+    height: 16vh;
+    width: 16vh;
+    margin-left: 5vh;
+}
+
+input.barra_pesquisa {
+    border-radius: 3vh;
+    height: 6vh;
+    width: 60vh;
+    text-align: center;
+    margin-left: 10vh;
+    margin-right: 2vh;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 1vh 1vh rgba(255, 255, 255, 1);
+}
+
+img.lupa {
+    height: 12vh;
+    width: 13vh;
+}
+
+img.usuario {
+    height: 12vh;
+    width: 13vh;
+    margin-left: 40vh;
+    margin-right: 5vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vh;
+    width:100%;
+    justify-items: center;
+}
+
+.cards, .cards1, .cards2, .cards3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 0;
+    margin: 0;
+    padding: 1vh;
+    gap: 1vh;
+    background-color: black;
+    width: 30vh;
+    height: 35vh;
+    box-sizing: border-box;
+}
+
+.cards .fifa_coins_section, .cards1 .fifa_coins_section, .cards2 .fifa_coins_section, .cards3 .fifa_coins_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+p {
+    color: white;
+    margin: 0;
+    font-size: 2vh;
+    text-align: center;
+}
+
+img.Ronaldo, img.Kvaratskhelia, img.Rüdiger, img.Marquinhos{
+    width: 23vh;
+    height: 20vh;
+}
+
+img.fifa_coins {
+    width: 10vh;
+    height: 7vh;
+}
+
+
+#clear_slide_menu {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative; 
+}
+
+#clear_slide_menu p {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    position: relative; 
+}
+
+
+.dropmenu1 {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    top: 100%; 
+    left: 25vh;
+    width: 200px;
+    z-index: 0;
+    background-color: black;
+}
+
+.dropmenu2 {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    top: 100%; 
+    width: 200px;
+    z-index: 0;
+    background-color: black;
+}
+
+.dropmenu3 {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    right: 25vh;
+    top: 100%; 
+    width: 200px;
+    z-index: 1;
+    background-color: black;
+}
+
+#clear_slide_menu p:nth-of-type(1):hover + .dropmenu1,
+.dropmenu1:hover,
+#clear_slide_menu p:nth-of-type(2):hover + .dropmenu2,
+.dropmenu2:hover,
+#clear_slide_menu p:nth-of-type(3):hover + .dropmenu3,
+.dropmenu3:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.dropmenu1 a, .dropmenu2 a, .dropmenu3 a {
+    display: table;
+    margin: 0;
+    padding: 10px;
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.dropmenu1 p:hover, .dropmenu2 p:hover, .dropmenu3 p:hover {
+    background-color: black;
+}
