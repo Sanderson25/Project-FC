@@ -30,9 +30,9 @@ div.PROJECT-FC .logo_principal {
 input.barra_pesquisa {
     border-radius: 3vh;
     height: 6vh;
-    width: 60vh;
+    width: 100%;
     text-align: center;
-    margin-left: 10vh;
+    margin-left: 30vh;
     margin-right: 2vh;
     background-color: black;
     color: white;
@@ -57,6 +57,8 @@ img.usuario {
     gap: 1vh;
     width:100%;
     justify-items: center;
+    align-items: center;
+    margin-top: 2vh;
 }
 
 .cards, .cards1, .cards2, .cards3 {
@@ -119,33 +121,36 @@ img.fifa_coins {
 .dropmenu1 {
     display: none;
     position: absolute;
-    padding: 10px;
-    top: 100%; 
+    padding: 2vh;
+    top: 5vh; 
     left: 25vh;
-    width: 200px;
+    width: 33vh;
     z-index: 1;
     background-color: black;
+    border-radius: 5vh;
 }
 
 .dropmenu2 {
     display: none;
     position: absolute;
-    padding: 10px;
-    top: 100%; 
-    width: 200px;
+    padding: 2vh;
+    top: 5vh;  
+    width: 33vh;
     z-index: 1;
     background-color: black;
+    border-radius: 5vh;
 }
 
 .dropmenu3 {
     display: none;
     position: absolute;
-    padding: 10px;
+    padding: 2vh;
     right: 25vh;
-    top: 100%; 
-    width: 200px;
+    top: 5vh;  
+    width: 33vh;
     z-index: 1;
     background-color: black;
+    border-radius: 5vh;
 }
 
 #clear_slide_menu p:nth-of-type(1):hover + .dropmenu1,
