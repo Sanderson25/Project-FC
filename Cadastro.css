@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0.5vh solid black; 
+    background-color: black;
+}
+
+div.PROJECT-FC {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vh;
+    font-family: sans-serif;
+    font-size: 4vh;
+    color: white;
+}
+
+div.PROJECT-FC .logo_principal {
+    height: 16vh;
+    width: 16vh;
+    margin-left: 5vh;
+}
+
+div.usuario{
+    height: 16vh;
+    width: 16vh;
+    cursor: pointer ;
+    overflow: hidden;
+}
+
+.usuario-img {
+    height: 16vh;
+    width: 16vh;
+    object-fit: cover; /* Garante que a imagem preencha a div sem distorcer */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+main{
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 6vh;
+}
+
+div.Login {
+display: flex; 
+flex-direction: column; 
+align-items: center;
+justify-content: center;
+background-color: black;
+height: 75vh;
+width: 80vh;
+color: white;
+}
+
+a{
+text-decoration: none;
+color: white;
+margin-top: 4vh;
+}
+
+input{
+box-shadow: 0px 0px 1vh 1vh rgba(255, 255, 255, 1);
+}

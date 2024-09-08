@@ -180,3 +180,12 @@ img.fifa_coins {
 .dropmenu1 p:hover, .dropmenu2 p:hover, .dropmenu3 p:hover {
     background-color: black;
 }
+
+a.link-login{
+    position: absolute;
+    left: 91%;
+    height: 12vh;
+    width: 13vh;
+    display: block; 
+    z-index: 1; 
+}

@@ -1,0 +1,62 @@
+<htmL lang="pt-br">
+    <head>
+        <title>PROJECT-FC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Cadastro.css">
+        <title>Cadastro</title>
+    </head>
+
+    <body>
+
+    <header>
+    <div class="PROJECT-FC">
+        <img src= "imagens/logo_principal.png" class="logo_principal">
+        <p>PROJECT-FC</p>
+    </div>
+
+    </header>
+
+    <main>
+        <div class="Login">
+<!-- Contêiner da imagem -->
+<div class="usuario">
+    <label for="fileInput">
+        <img src="imagens/usuario.png" alt="Clique para selecionar a foto de perfil" class="usuario-img">
+    </label>
+</div>
+
+<!-- Campo de input escondido -->
+<input type="file" id="fileInput" style="display: none;" accept="image/*">
+
+            <p>Nome e Sobrenome</p>
+            <input></input>
+            <p>E-mail</p>
+            <input></input>
+            <p>Senha</p>
+            <input ></input>
+            <p>Confirma Senha</p>
+            <input></input>
+    
+            <a href="Login.html">Já tem um conta? Logar-se!</a>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.querySelector('.usuario-img').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    
+    
+
+    </body>
+
+</htmL>
